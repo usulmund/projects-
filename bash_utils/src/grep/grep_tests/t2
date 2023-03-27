@@ -1,0 +1,29 @@
+#ifndef SRC_GREP_H
+#define SRC_GREP_H
+
+
+typedef struct cmd {
+    int opt_e;
+    int opt_i; // разобраться что происходит с ААА
+    int opt_v;
+    int opt_c;
+    int opt_l;
+    int opt_n;
+    int opt_h;
+    int opt_s;
+    int opt_f;
+    int opt_o;
+
+    int opt_err;
+    int arg_err;
+    
+} Cmd;
+
+
+void init_options(Cmd* cmd);
+
+int check_low(char * line, char** patterns, int p_cnt);
+
+
+
+#endif   //   SRC_GREP_H

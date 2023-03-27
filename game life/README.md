@@ -16,6 +16,8 @@
 * s + Enter - уменьшение скорости
 * q + Enter - выход
 
-## Примеры конфигураций
+## Запуск
 
-![вертушка, бакен, часы и жаба](/misc/images/oscillators.gif)
+* gcc game_of_life.c
+* ./a.out
+

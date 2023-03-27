@@ -1,0 +1,12 @@
+FILE * fin;
+        int cnt_fit_lines = 0;
+        int num_line = 0;
+        if ((fin = fopen(filename, "r")) != NULL) {
+            char * read;
+            char* line = malloc(101*sizeof(char));
+            int write_filename = 0;
+            while ((read = fgets(line, 100, fin)) != NULL) {
+                num_line++;
+                // printf("%s", line);    
+                int need_to_print_line = 1;
+                int match = 0;
